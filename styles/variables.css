@@ -2,3 +2,31 @@
   Переменные для вашего проекта
   и их переопределение под различные устройства
 */
+
+/* Большинство цветов, шрифт, размеры текста для разных элементов и отступы удобно хранить в переменных, потому что они часто используются в разных местах кода. А ещё это нужно, чтобы быстро менять темы простым переопределением переменных. */
+
+:root {
+	--main-font: 'IBM Plex mono';
+	--bgd-color: #000028;
+	--decor-color: #ff0070;
+	--button-color: #ff0070;
+	--hover-color: rgb(255 0 112 / 0.4);
+	--focus-color: #db00ff;
+	--shadow-color: #ff0070;
+	--title-color: #000028;
+	--bgd-title-color: #ff0070;
+	--content-title-color: #ff0070;
+	--text-color: #f1b2ce;
+	--link-accent-color: #ff0070;
+  --bgd-image: url(../images/cover-image-dark.png);
+	--main-size: 18px;
+  --main-line: 130%;
+  --padding-s: 10px;
+  --padding-m: 20px;
+  --title-size-s: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  --title-size-m: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+}
+
+
+
+
