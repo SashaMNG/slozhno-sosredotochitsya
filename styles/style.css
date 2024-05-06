@@ -216,11 +216,6 @@ article {
 	article {
 		margin-block-end: 80px;
 	}
-	/* .content {
-		display: grid;
-		grid-template-rows: repeat(4, auto);
-		gap: 80px;
-	} */
 }
 
 @media (min-width: 768px) {
@@ -233,7 +228,6 @@ article {
 
 	.content__card-what {
 		display: grid;
-		/* grid-template-rows: repeat(2, auto); */
 		gap: 20px;
 	}
 
