@@ -11,10 +11,7 @@
 	--text-color: #353430;
 	--link-accent-color: #ff8dcb;
 	--bgd-image: url(../images/cover-image-light.png);
-}
-
-.theme_light .header__decor-rec {
-	display: none;
+	--display: none;
 }
 
 @media (prefers-color-scheme: light) {
@@ -31,9 +28,6 @@
 		--text-color: #353430;
 		--link-accent-color: #ff8dcb;
 		--bgd-image: url(../images/cover-image-light.png);
-	}
-
-	.header__decor-rec {
-		display: none;
+		--display: none;
 	}
 }

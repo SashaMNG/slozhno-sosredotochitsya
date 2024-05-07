@@ -11,4 +11,5 @@
 	--text-color: #f1b2ce;
 	--link-accent-color: #ff0070;
 	--bgd-image: url(../images/cover-image-dark.png);
+	--display: flex;
 }
