@@ -86,7 +86,7 @@
 
 .header__decor-rec {
 	content: '';
-	display: flex;
+	display: var(--display);
 	position: absolute;
 	top: 9px;
 	right: 18px;
@@ -219,40 +219,32 @@ article {
 }
 
 @media (min-width: 768px) {
+	.content__card-what,
+	.content__card-why,
+	.content__card-how,
+	.content__list-why,
+	.content__list-what,
+	.content__wrapper,
+	.content__list-how {
+		display: grid;
+		gap: 20px;
+	}
 	.content__card-why,
 	.content__card-how {
-		display: grid;
 		grid-template-columns: 1fr 2fr;
-		gap: 20px;
 	}
 
-	.content__card-what {
-		display: grid;
-		gap: 20px;
-	}
-
-	.content__list-why {
-		display: grid;
+	.content__list-why,
+	.content__wrapper {
 		grid-template-rows: repeat(2, auto);
-		gap: 20px;
 	}
 
 	.content__list-what {
-		display: grid;
 		grid-template-rows: repeat(3, auto);
-		gap: 20px;
-	}
-
-	.content__wrapper {
-		display: grid;
-		grid-template-rows: repeat(2, auto);
-		gap: 20px;
 	}
 
 	.content__list-how {
-		display: grid;
 		grid-template-rows: repeat(5, auto);
-		gap: 20px;
 	}
 
 	.content__list-item {
@@ -273,13 +265,12 @@ article {
 	}
 
 	.content__list-what {
-		display: grid;
 		grid-template-rows: none;
 		grid-template-columns: repeat(3, 32%);
 		gap: 20px;
 	}
 	.content__list-how {
-		grid-template-rows: repeat(6, auto);
+		grid-template-rows: repeat(5, auto);
 		gap: 21px;
 	}
 }
